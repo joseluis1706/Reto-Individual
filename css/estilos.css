@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+/* **************Header y division de pantalla****************** */
+
+.container{
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+}
+
+.container .btn-menu{
+    float: right;
+    line-height: 50px;
+}
+
+.container .btn-menu label{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.izquierda{
+    background: url(../img/cartagena_header.jpg);
+    background-size: cover;
+    background-position: center ;
+    width: 50%;
+    height: 100vh;
+}
+
+.logo a img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;    
+}
+
+/* .logo p{
+   margin-left: 20px;
+   color: rgb(236, 236, 236);
+} */
+
+.derecha{
+    background: rgb(122, 122, 184);
+    height: 100vh;
+    width: 50%;
+}
+
+#pantalla_dividida{
+    display: flex;
+}
+
+h1{
+    font-size: 60px;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.derecha p{
+    font-size: 40px;
+    line-height: 30px;
+    width: 100%;
+    line-height: 1.6;
+    /* margin: auto; */
+    text-align: center;
+}
+
+/* ************Menu Lateral********* */
+
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0; right: 0;
+    transition: all 500ms ease;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+ .cont-menu{
+    width: 100%;
+    max-width: 50%;
+    background:#444444;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);    
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 1.5s all;
+    width: 40px;  
+}
+
+.cont-menu label:hover{
+    transform: rotate(180deg);
+}
+
+.footer p{
+    font-size: 15px;
+}
+.footer{
+    margin-top: 100px;
+}
+
+/* ***************Redes Sociales****************** */
+
+.cont-menu h2{
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+    margin-top: 40px;
+    font-family: arial;
+    font-size: 20px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,.4);
+}
+
+.cont-menu ul{
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.cont-menu ul li{
+    display: inline-block;    
+}
+
+.cont-menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cont-menu figure figcaption{
+    font-family: arial;
+    font-size: 12px;
+}
+
+.cont-menu figure img{
+    /* transition: 1.5s all; */
+    width: 30px;
+}
+
+.redes {
+    /* margin-top: 90px; */
+    margin: 10px;
+}
+
+.cont-menu figure img:hover{
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+}
+
+.footer p{
+    color: white;
+    width: auto;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.cont-menu .foto img{
+    width: auto;
+    height: 180px ;
+    border-radius: 100%;
+    margin-left: 40%;
+}
+/* **************************Main********************************************** */
+
+.section1, .section3{
+    /* border: 2px solid black; */
+    width: 100%x;
+    height: 100vh;
+    background: #000;
+    display: flex;
+}
+.section2{
+    display: flex;
+    flex-flow: row-reverse;
+}
+.articulos{
+    background: #ececec;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+.articulos2{
+    background: #ececec;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.article{
+    flex: 1 1 40%;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    background: #ececec;
+    
+}
+.article::before{
+    content: "";
+    position: absolute;
+    border-right: 2px solid black;
+    height: 350px;
+    left: 96%;
+    margin-top: 100px;
+    width: 2px;
+    margin-left: 10px;
+}
+
+.article2{
+    flex: 1 1 40%;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    background: #ececec;
+}
+    
+.article2::before{
+    content: "";
+    position: absolute;
+    border-left: 2px solid black;
+    height: 350px;
+    right: 96%;
+    margin-top: 100px;
+    width: 2px;
+    margin-right: 10px;
+}
+
+.article img{
+    width: 40%;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 100px;
+    float: left;
+    margin-right: 50px;
+    overflow: hidden;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.548);
+    transition: 1s;
+}
+
+.article2 img{
+    width: 40%;
+    height: 350px;
+    margin-right: 50px;
+    margin-top: 100px;
+    float: right;
+    margin-left: 50px;
+    overflow: hidden;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.548);
+    transition: 1s;
+}
+.article img:hover {
+    transform: scale(1.1);
+}
+
+.article2 img:hover{
+    transform: scale(1.1);
+}
+
+.article h3{
+    color: black;
+    width: auto;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.article2 h3{
+    color: black;
+    width: auto;
+    margin-left: 70px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 300;
+}
+.article p{
+    color: black;
+    font-style: bold;
+    width: auto;
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.article2 p{
+    color: black;
+    font-style: bold;
+    width: auto;
+    /* margin-right: 20px; */
+    margin-left: 70px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
