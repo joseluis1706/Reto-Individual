@@ -1,8 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* background-color: black; */
 }
 
 /* **************Header y division de pantalla****************** */
@@ -31,6 +29,7 @@ body{
     background-position: center ;
     width: 50%;
     height: 100vh;
+    margin-left: 10px;
 }
 
 .logo a img{
@@ -40,15 +39,11 @@ body{
     margin-left: 10px;    
 }
 
-/* .logo p{
-   margin-left: 20px;
-   color: rgb(236, 236, 236);
-} */
-
 .derecha{
     background: rgb(122, 122, 184);
     height: 100vh;
     width: 50%;
+    margin-right: 10px;
 }
 
 #pantalla_dividida{
@@ -68,7 +63,6 @@ h1{
     line-height: 30px;
     width: 100%;
     line-height: 1.6;
-    /* margin: auto; */
     text-align: center;
 }
 
@@ -96,7 +90,7 @@ h1{
     visibility: visible;
 }
 
- .cont-menu{
+.cont-menu{
     width: 100%;
     max-width: 50%;
     background:#444444;
@@ -112,7 +106,7 @@ h1{
 
 .cont-menu nav{
     transform: translateY(15%);
-}
+ } 
 
 .cont-menu nav a{
     display: block;
@@ -146,6 +140,7 @@ h1{
 .footer p{
     font-size: 15px;
 }
+
 .footer{
     margin-top: 100px;
 }
@@ -184,18 +179,15 @@ h1{
 }
 
 .cont-menu figure img{
-    /* transition: 1.5s all; */
     width: 30px;
 }
 
 .redes {
-    /* margin-top: 90px; */
     margin: 10px;
 }
 
 .cont-menu figure img:hover{
-    /* transform: rotate(360deg); */
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .footer p{
@@ -211,25 +203,31 @@ h1{
     border-radius: 100%;
     margin-left: 40%;
 }
+
+.cont-menu .foto img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* **************************Main********************************************** */
 
 .section1, .section3{
-    /* border: 2px solid black; */
     width: 100%x;
     height: 100vh;
-    background: #000;
+    background: #ececec;
     display: flex;
 }
+
 .section2{
     display: flex;
     flex-flow: row-reverse;
 }
+
 .articulos{
     background: #ececec;
     flex: 2 1 auto;
     display: flex;
     flex-flow: row nowrap;
-    
 }
 
 .articulos2{
@@ -245,11 +243,18 @@ h1{
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 1.6;
-    margin: 10px 10px 0 0px;
+    margin: 50px 10px 0px 10px;
     flex: 1 1 45%;
     background: #ececec;
-    
 }
+
+.title h2{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 300px;
+    position: absolute;
+}
+
 .article::before{
     content: "";
     position: absolute;
@@ -267,9 +272,10 @@ h1{
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 1.6;
-    margin: 10px 10px 0 0px;
+    margin: 10px 10px 0px 10px;
     flex: 1 1 45%;
     background: #ececec;
+    height: 100%;
 }
     
 .article2::before{
@@ -306,6 +312,7 @@ h1{
     box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.548);
     transition: 1s;
 }
+
 .article img:hover {
     transform: scale(1.1);
 }
@@ -315,10 +322,11 @@ h1{
 }
 
 .article h3{
-    color: black;
+    color: #000000;
     width: auto;
-    margin-top: 80px;
+    margin-top: 70px;
     font-size: 30px;
+    font-style: bold;
     font-weight: 300;
 }
 
@@ -331,25 +339,24 @@ h1{
     font-style: bold;
     font-weight: 300;
 }
+
 .article p{
     color: black;
     font-style: bold;
     width: auto;
-    margin-right: 50px;
+    margin-right: 70px;
     text-align: justify;
     font-size: 15px;
     font-weight: 300;
+    margin-top: 30px;
 }
 
 .article2 p{
     color: black;
     font-style: bold;
     width: auto;
-    /* margin-right: 20px; */
     margin-left: 70px;
     text-align: justify;
     font-size: 15px;
     font-weight: 300;
 }
-
-
